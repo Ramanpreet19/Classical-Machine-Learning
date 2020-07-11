@@ -1,0 +1,174 @@
+models_list    = [clf_svm, clf_knn, clf_log_reg, clf_svm_poly]
+num_of_layers  = 2
+Training accuracy of the model  0.9859902067464635
+Testing accuracy of the model  0.9385816084153377
+
+models_list    = [clf_svm, clf_knn, clf_log_reg, clf_svm_poly]
+num_of_layers  = 3
+Training accuracy of the model  0.9884385201305768
+Testing accuracy of the model  0.9375636240244316
+
+models_list    = [clf_svm,clf_knn,clf_log_reg,clf_rf, clf_svm_rbf]
+num_of_layers  = 2
+Training accuracy of the model  0.9938792165397171
+Testing accuracy of the model  0.9552086868001357
+
+models_list    = [clf_svm, clf_log_reg, clf_svm_rbf]
+num_of_layers  = 5
+Layer:  0
+Layer:  1
+Layer:  2
+Layer:  3
+Training accuracy of the model  0.9730685527747551
+Testing accuracy of the model  0.9250084832032576
+
+
+
+#40 FEATURES
+clf_svm = svm.SVC(kernel='linear', C=1, probability=True)
+clf_knn = KNeighborsClassifier(n_neighbors=5)
+clf_rf = RandomForestClassifier(max_depth=13, random_state=0, n_estimators=100)
+clf_log_reg  = LogisticRegression(random_state=0)
+
+#clf_svm_rbf  = svm.SVC(kernel='rbf', C=1, degree=10)
+models_list    = [clf_log_reg, clf_knn, clf_rf]
+num_of_layers  = 2
+
+Layer:  0
+Accuracy is  0.9529126213592233
+Layer:  0
+Accuracy is  0.9597087378640776
+Layer:  0
+Accuracy is  0.9223300970873787
+Layer:  0
+Accuracy is  0.9548543689320388
+Layer:  0
+Accuracy is  0.9776590577950461
+[0.9529126213592233, 0.9597087378640776, 0.9223300970873787, 0.9548543689320388, 0.9776590577950461]
+Mean:  0.9534929766075528
+Variance 0.0003191900858445911
+
+
+Cross Vlaidation score for logistic reg is [0.90582524 0.94660194 0.9407767  0.94368932 0.87572816 0.85728155
+ 0.91650485 0.94660194 0.96990291 0.92905734]
+Mean of cross validation score is 0.9231969958579824
+
+
+
+training accuracy with KNN 0.9644994559303591
+testing accuracy with KNN 0.8832711231761113
+
+Cross Validation score for KNN is [0.89417476 0.91262136 0.89126214 0.8961165  0.87087379 0.86504854
+ 0.88640777 0.89126214 0.94563107 0.89212828]
+Mean of cross validation score for KNN is 0.8945526338135809
+
+training accuracy with RFC 0.9940152339499456
+testing accuracy with RFC 0.9009161859518154
+
+Cross Validation score for RFC is [0.89805825 0.90291262 0.91456311 0.90679612 0.86504854 0.83300971
+ 0.86504854 0.8815534  0.94174757 0.87269193]
+Mean of cross validation score for RFC is 0.8881429797994093
+
+
+clf_svm = svm.SVC(kernel='linear', C=1, probability=True)
+clf_knn = KNeighborsClassifier(n_neighbors=5)
+#clf_rf = RandomForestClassifier(max_depth=13, random_state=0, n_estimators=100)
+clf_log_reg  = LogisticRegression(random_state=0)
+
+#clf_svm_rbf  = svm.SVC(kernel='rbf', C=1, degree=10)
+models_list    = [clf_log_reg, clf_knn, clf_svm]
+num_of_layers  = 2
+        
+Layer:  0
+Accuracy is  0.970873786407767
+Layer:  0
+Accuracy is  0.9737864077669903
+Layer:  0
+Accuracy is  0.9796116504854369
+Layer:  0
+Accuracy is  0.9650485436893204
+Layer:  0
+Accuracy is  0.9446601941747573
+Layer:  0
+Accuracy is  0.9097087378640777
+Layer:  0
+Accuracy is  0.9631067961165048
+Layer:  0
+Accuracy is  0.9805825242718447
+Layer:  0
+Accuracy is  0.9902912621359223
+Layer:  0
+Accuracy is  0.9747327502429544
+[0.970873786407767, 0.9737864077669903, 0.9796116504854369, 0.9650485436893204, 0.9446601941747573, 0.9097087378640777, 0.9631067961165048, 0.9805825242718447, 0.9902912621359223, 0.9747327502429544]
+Mean:  0.9652402653155576
+Variance 0.00047762327613302643
+
+
+clf_svm = svm.SVC(kernel='linear', C=1, probability=True)
+clf_knn = KNeighborsClassifier(n_neighbors=5)
+#clf_rf = RandomForestClassifier(max_depth=13, random_state=0, n_estimators=100)
+clf_log_reg  = LogisticRegression(random_state=0)
+
+#clf_svm_rbf  = svm.SVC(kernel='rbf', C=1, degree=10)
+models_list    = [clf_log_reg, clf_knn, clf_svm]
+num_of_layers  = 3
+        
+Layer:  0
+Layer:  1
+Accuracy is  0.9689320388349515
+Layer:  0
+Layer:  1
+Accuracy is  0.974757281553398
+Layer:  0
+Layer:  1
+Accuracy is  0.9786407766990292
+Layer:  0
+Layer:  1
+Accuracy is  0.9689320388349515
+Layer:  0
+Layer:  1
+Accuracy is  0.9446601941747573
+Layer:  0
+Layer:  1
+Accuracy is  0.903883495145631
+Layer:  0
+Layer:  1
+Accuracy is  0.958252427184466
+Layer:  0
+Layer:  1
+Accuracy is  0.9805825242718447
+Layer:  0
+Layer:  1
+Accuracy is  0.9912621359223301
+Layer:  0
+Layer:  1
+Accuracy is  0.9727891156462585
+[0.9689320388349515, 0.974757281553398, 0.9786407766990292, 0.9689320388349515, 0.9446601941747573, 0.903883495145631, 0.958252427184466, 0.9805825242718447, 0.9912621359223301, 0.9727891156462585]
+Mean:  0.9642692028267618
+Variance 0.0005494506319940034
+
+
+##### 20 feature ######
+Layer:  0
+Accuracy is  0.9699029126213592
+Layer:  0
+Accuracy is  0.970873786407767
+Layer:  0
+Accuracy is  0.9786407766990292
+Layer:  0
+Accuracy is  0.9640776699029127
+Layer:  0
+Accuracy is  0.945631067961165
+Layer:  0
+Accuracy is  0.9087378640776699
+Layer:  0
+Accuracy is  0.962135922330097
+Layer:  0
+Accuracy is  0.9825242718446602
+Layer:  0
+Accuracy is  0.9893203883495145
+Layer:  0
+Accuracy is  0.9727891156462585
+[0.9699029126213592, 0.970873786407767, 0.9786407766990292, 0.9640776699029127, 0.945631067961165, 0.9087378640776699, 0.962135922330097, 0.9825242718446602, 0.9893203883495145, 0.9727891156462585]
+Mean:  0.9644633775840432
+Variance 0.00047506198879989834
